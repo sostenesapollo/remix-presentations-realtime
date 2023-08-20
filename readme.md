@@ -15,3 +15,10 @@ It is written in Javascript and uses `Remix`, `tailwind`
 ## Demo
 
 <img src="./gif.gif">
+
+### How to run
+- My NodeJS version: `v18.15.0`
+```bash
+npm i
+npm run build && npm run start
+```
