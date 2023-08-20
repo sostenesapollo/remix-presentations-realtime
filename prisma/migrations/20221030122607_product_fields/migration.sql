@@ -1,0 +1,5 @@
+-- AlterTable
+ALTER TABLE "products" ALTER COLUMN "barcode" DROP NOT NULL,
+ALTER COLUMN "image_url" DROP NOT NULL,
+ALTER COLUMN "proportion" DROP NOT NULL,
+ALTER COLUMN "proportion" SET DEFAULT 1;

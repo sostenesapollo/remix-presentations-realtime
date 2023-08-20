@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "reports" ADD COLUMN     "value2" DOUBLE PRECISION DEFAULT 0;

@@ -1,0 +1,15 @@
+-- AlterTable
+ALTER TABLE "companies" ADD COLUMN     "fri_close_time" TEXT,
+ADD COLUMN     "fri_opening_time" TEXT,
+ADD COLUMN     "mon_close_time" TEXT,
+ADD COLUMN     "mon_opening_time" TEXT,
+ADD COLUMN     "sat_close_time" TEXT,
+ADD COLUMN     "sat_opening_time" TEXT,
+ADD COLUMN     "sun_close_time" TEXT,
+ADD COLUMN     "sun_opening_time" TEXT,
+ADD COLUMN     "thu_close_time" TEXT,
+ADD COLUMN     "thu_opening_time" TEXT,
+ADD COLUMN     "tue_close_time" TEXT,
+ADD COLUMN     "tue_opening_time" TEXT,
+ADD COLUMN     "wed_close_time" TEXT,
+ADD COLUMN     "wed_opening_time" TEXT;
