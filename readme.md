@@ -9,6 +9,7 @@ It is written in Javascript and uses `Remix`, `tailwind`
 - I want to also implement the `Bible` as in Holyrics
 - I want to store the songs locally using `prisma`
 - I want to add the hability to play `videos` and `images` by just uploading it from my phone
+- This one is also open source, so different of holyrics It's open
 
 ## Demo
 
