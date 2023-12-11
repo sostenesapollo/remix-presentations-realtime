@@ -96,13 +96,8 @@ app.use(morgan("tiny"));
 
 const MODE = process.env.NODE_ENV;
 const BUILD_DIR = path.join(process.cwd(), "build");
-const REDIS_URL = process.env.REDIS_URL
 
-const redisClient = createClient({
-  url: REDIS_URL
-});
-redisClient.connect().then(() => console.log('⚡ Redis Client Connected to', REDIS_URL));
-redisClient.on('error', err => console.log('Redis Client Error', err));
+// redisClient.on('error', err => console.log('Redis Client Error', err));
 
 app.all(
   "*",
@@ -112,7 +107,7 @@ app.all(
       getLoadContext: ()=> {
         return {
           io,
-          redisClient
+          // redisClient
         }
       }
     })
@@ -124,7 +119,7 @@ app.all(
           getLoadContext: ()=> {
             return {
               io,
-              redisClient
+              // redisClient
             }
           }
         });
@@ -132,7 +127,7 @@ app.all(
       }
 );
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 
 server.listen(port, () => {
   // require the built app so we're ready when the first request comes in

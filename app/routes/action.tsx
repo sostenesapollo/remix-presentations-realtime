@@ -2,7 +2,6 @@ import { useLoaderData } from "@remix-run/react";
 import { useEffect, useState } from "react";
 import type { Socket } from "socket.io-client";
 import type { DefaultEventsMap } from "socket.io/dist/typed-events";
-import type { ActionFunction } from "~/props-types";
 import { connect } from "~/ws.client";
 var ip = require('ip');
 

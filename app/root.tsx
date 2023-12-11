@@ -16,7 +16,7 @@ import {
   useRouteError,
 } from "@remix-run/react";
 // import NotificationSound from "../public/confetti.mp3";
-import { getUser } from "~/session.server";
+// import { getUser } from "~/session.server";
 import stylesheet from "~/tailwind.css";
 import { useEffect, useRef, useState } from "react";
 import { metaV1 } from '@remix-run/v1-meta';
@@ -45,9 +45,10 @@ export async function loader({ request }: any) {
   }
   
   // todo: DEIXAR CACHEADO ISSO AQUI, verificar se está pegando do banco de dados ou se está pegando do cookie
-  const user = await getUser(request) as any
+  // const user = await getUser(request) as any
 
-  return json({ user, logged_out: !!logged_out });
+  // return json({ user, logged_out: !!logged_out });
+  return {}
 }
 
 export function ErrorBoundary() {
